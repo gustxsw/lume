@@ -51,25 +51,13 @@ body {
   }
 }
 
-/* Efeito de digitação no título */
+/* Estilo do título */
 h1 {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #c7ae6a;
-  width: 0;
   font-size: 28px;
   font-weight: 600;
-  color: #c7ae6a;
-  animation: typing 2s steps(30, end) forwards;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  color: #c7ae6a; /* Dourado suave */
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 p {
