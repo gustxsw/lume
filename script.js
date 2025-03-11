@@ -42,3 +42,17 @@ function criarCoracoes() {
 }
 
 setInterval(criarCoracoes, 500);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const botaoWhatsApp = document.querySelector(".btn");
+
+  if (botaoWhatsApp) {
+    botaoWhatsApp.addEventListener("click", function () {
+      gtag("event", "click", {
+        event_category: "Botão",
+        event_label: "WhatsApp",
+        value: 1,
+      });
+    });
+  }
+});
